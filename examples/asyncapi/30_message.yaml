@@ -1,0 +1,523 @@
+asyncapi: '2.0.0'
+info:
+  title: Multiple Messages
+  version: '1.0.0'
+defaultContentType: application/json
+channels:
+  topic/one:
+    description: Topic 1
+    publish:
+      operationId: SendMessage1
+      message:
+        $ref: '#/components/messages/Message1'
+  topic/two:
+    description: Topic 2
+    publish:
+      operationId: SendMessage2
+      message:
+        $ref: '#/components/messages/Message2'
+  topic/three:
+    description: Topic 3
+    publish:
+      operationId: SendMessage3
+      message:
+        $ref: '#/components/messages/Message3'
+  topic/four:
+    description: Topic 4
+    publish:
+      operationId: SendMessage4
+      message:
+        $ref: '#/components/messages/Message4'
+  topic/five:
+    description: Topic 5
+    publish:
+      operationId: SendMessage5
+      message:
+        $ref: '#/components/messages/Message5'
+  topic/six:
+    description: Topic 6
+    publish:
+      operationId: SendMessage6
+      message:
+        $ref: '#/components/messages/Message6'
+  topic/seven:
+    description: Topic 7
+    publish:
+      operationId: SendMessage7
+      message:
+        $ref: '#/components/messages/Message7'
+  topic/eight:
+    description: Topic 8
+    publish:
+      operationId: SendMessage8
+      message:
+        $ref: '#/components/messages/Message8'
+  topic/nine:
+    description: Topic 9
+    publish:
+      operationId: SendMessage9
+      message:
+        $ref: '#/components/messages/Message9'
+  topic/ten:
+    description: Topic 10
+    publish:
+      operationId: SendMessage10
+      message:
+        $ref: '#/components/messages/Message10'
+  topic/eleven:
+    description: Topic 11
+    publish:
+      operationId: SendMessage11
+      message:
+        $ref: '#/components/messages/Message11'
+  topic/twelve:
+    description: Topic 12
+    publish:
+      operationId: SendMessage12
+      message:
+        $ref: '#/components/messages/Message12'
+  topic/thirteen:
+    description: Topic 13
+    publish:
+      operationId: SendMessage13
+      message:
+        $ref: '#/components/messages/Message13'
+  topic/fourteen:
+    description: Topic 14
+    publish:
+      operationId: SendMessage14
+      message:
+        $ref: '#/components/messages/Message14'
+  topic/fifteen:
+    description: Topic 15
+    publish:
+      operationId: SendMessage15
+      message:
+        $ref: '#/components/messages/Message15'
+  topic/sixteen:
+    description: Topic 16
+    publish:
+      operationId: SendMessage16
+      message:
+        $ref: '#/components/messages/Message16'
+  topic/seventeen:
+    description: Topic 17
+    publish:
+      operationId: SendMessage17
+      message:
+        $ref: '#/components/messages/Message17'
+  topic/eighteen:
+    description: Topic 18
+    publish:
+      operationId: SendMessage18
+      message:
+        $ref: '#/components/messages/Message18'
+  topic/nineteen:
+    description: Topic 19
+    publish:
+      operationId: SendMessage19
+      message:
+        $ref: '#/components/messages/Message19'
+  topic/twenty:
+    description: Topic 20
+    publish:
+      operationId: SendMessage20
+      message:
+        $ref: '#/components/messages/Message20'
+  topic/twentyone:
+    description: Topic 21
+    publish:
+      operationId: SendMessage21
+      message:
+        $ref: '#/components/messages/Message21'
+  topic/twentytwo:
+    description: Topic 22
+    publish:
+      operationId: SendMessage22
+      message:
+        $ref: '#/components/messages/Message22'
+  topic/twentythree:
+    description: Topic 23
+    publish:
+      operationId: SendMessage23
+      message:
+        $ref: '#/components/messages/Message23'
+  topic/twentyfour:
+    description: Topic 24
+    publish:
+      operationId: SendMessage24
+      message:
+        $ref: '#/components/messages/Message24'
+  topic/twentyfive:
+    description: Topic 25
+    publish:
+      operationId: SendMessage25
+      message:
+        $ref: '#/components/messages/Message25'
+  topic/twentysix:
+    description: Topic 26
+    publish:
+      operationId: SendMessage26
+      message:
+        $ref: '#/components/messages/Message26'
+  topic/twentyseven:
+    description: Topic 27
+    publish:
+      operationId: SendMessage27
+      message:
+        $ref: '#/components/messages/Message27'
+  topic/twentyeight:
+    description: Topic 28
+    publish:
+      operationId: SendMessage28
+      message:
+        $ref: '#/components/messages/Message28'
+  topic/twentynine:
+    description: Topic 29
+    publish:
+      operationId: SendMessage29
+      message:
+        $ref: '#/components/messages/Message29'
+  topic/thirty:
+    description: Topic 30
+    publish:
+      operationId: SendMessage30
+      message:
+        $ref: '#/components/messages/Message30'
+
+components:
+  messages:
+    Message1:
+      name: Message1
+      payload:
+        $ref: "#/components/schemas/Message1"
+    Message2:
+      name: Message2
+      payload:
+        $ref: "#/components/schemas/Message2"
+    Message3:
+      name: Message3
+      payload:
+        $ref: "#/components/schemas/Message3"
+    Message4:
+      name: Message4
+      payload:
+        $ref: "#/components/schemas/Message4"
+    Message5:
+      name: Message5
+      payload:
+        $ref: "#/components/schemas/Message5"
+    Message6:
+      name: Message6
+      payload:
+        $ref: "#/components/schemas/Message6"
+    Message7:
+      name: Message7
+      payload:
+        $ref: "#/components/schemas/Message7"
+    Message8:
+      name: Message8
+      payload:
+        $ref: "#/components/schemas/Message8"
+    Message9:
+      name: Message9
+      payload:
+        $ref: "#/components/schemas/Message9"
+    Message10:
+      name: Message10
+      payload:
+        $ref: "#/components/schemas/Message10"
+    Message11:
+      name: Message11
+      payload:
+        $ref: "#/components/schemas/Message11"
+    Message12:
+      name: Message12
+      payload:
+        $ref: "#/components/schemas/Message12"
+    Message13:
+      name: Message13
+      payload:
+        $ref: "#/components/schemas/Message13"
+    Message14:
+      name: Message14
+      payload:
+        $ref: "#/components/schemas/Message14"
+    Message15:
+      name: Message15
+      payload:
+        $ref: "#/components/schemas/Message15"
+    Message16:
+      name: Message16
+      payload:
+        $ref: "#/components/schemas/Message16"
+    Message17:
+      name: Message17
+      payload:
+        $ref: "#/components/schemas/Message17"
+    Message18:
+      name: Message18
+      payload:
+        $ref: "#/components/schemas/Message18"
+    Message19:
+      name: Message19
+      payload:
+        $ref: "#/components/schemas/Message19"
+    Message20:
+      name: Message20
+      payload:
+        $ref: "#/components/schemas/Message20"
+    Message21:
+      name: Message21
+      payload:
+        $ref: "#/components/schemas/Message21"
+    Message22:
+      name: Message22
+      payload:
+        $ref: "#/components/schemas/Message22"
+    Message23:
+      name: Message23
+      payload:
+        $ref: "#/components/schemas/Message23"
+    Message24:
+      name: Message24
+      payload:
+        $ref: "#/components/schemas/Message24"
+    Message25:
+      name: Message25
+      payload:
+        $ref: "#/components/schemas/Message25"
+    Message26:
+      name: Message26
+      payload:
+        $ref: "#/components/schemas/Message26"
+    Message27:
+      name: Message27
+      payload:
+        $ref: "#/components/schemas/Message27"
+    Message28:
+      name: Message28
+      payload:
+        $ref: "#/components/schemas/Message28"
+    Message29:
+      name: Message29
+      payload:
+        $ref: "#/components/schemas/Message29"
+    Message30:
+      name: Message30
+      payload:
+        $ref: "#/components/schemas/Message30"
+
+  schemas:
+    Message1:
+      type: object
+      properties:
+        content:
+          type: string
+        timestamp:
+          type: integer
+    Message2:
+      type: object
+      properties:
+        id:
+          type: integer
+        status:
+          type: string
+    Message3:
+      type: object
+      properties:
+        flag:
+          type: boolean
+        description:
+          type: string
+    Message4:
+      type: object
+      properties:
+        value:
+          type: integer
+        unit:
+          type: string
+    Message5:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            type: string
+        checksum:
+          type: integer
+    Message6:
+      type: object
+      properties:
+        user_id:
+          type: integer
+        action:
+          type: string
+    Message7:
+      type: object
+      properties:
+        error_code:
+          type: integer
+        message:
+          type: string
+    Message8:
+      type: object
+      properties:
+        name:
+          type: string
+        age:
+          type: integer
+    Message9:
+      type: object
+      properties:
+        latitude:
+          type: number
+        longitude:
+          type: number
+    Message10:
+      type: object
+      properties:
+        product_id:
+          type: integer
+        quantity:
+          type: integer
+    Message11:
+      type: object
+      properties:
+        temperature:
+          type: number
+        humidity:
+          type: number
+    Message12:
+      type: object
+      properties:
+        speed:
+          type: number
+        direction:
+          type: string
+    Message13:
+      type: object
+      properties:
+        file_name:
+          type: string
+        file_size:
+          type: integer
+    Message14:
+      type: object
+      properties:
+        ip_address:
+          type: string
+        port:
+          type: integer
+    Message15:
+      type: object
+      properties:
+        session_id:
+          type: string
+        duration:
+          type: integer
+    Message16:
+      type: object
+      properties:
+        event_type:
+          type: string
+        severity:
+          type: string
+    Message17:
+      type: object
+      properties:
+        user_name:
+          type: string
+        login_time:
+          type: integer
+    Message18:
+      type: object
+      properties:
+        transaction_id:
+          type: string
+        amount:
+          type: number
+    Message19:
+      type: object
+      properties:
+        source:
+          type: string
+        destination:
+          type: string
+    Message20:
+      type: object
+      properties:
+        alert_type:
+          type: string
+        alert_message:
+          type: string
+    Message21:
+      type: object
+      properties:
+        device_id:
+          type: string
+        status:
+          type: string
+    Message22:
+      type: object
+      properties:
+        order_id:
+          type: string
+        order_status:
+          type: string
+    Message23:
+      type: object
+      properties:
+        metric_name:
+          type: string
+        metric_value:
+          type: number
+    Message24:
+      type: object
+      properties:
+        task_id:
+          type: string
+        task_status:
+          type: string
+    Message25:
+      type: object
+      properties:
+        job_id:
+          type: string
+        job_result:
+          type: string
+    Message26:
+      type: object
+      properties:
+        event_id:
+          type: string
+        event_timestamp:
+          type: integer
+    Message27:
+      type: object
+      properties:
+        log_level:
+          type: string
+        log_message:
+          type: string
+    Message28:
+      type: object
+      properties:
+        sensor_id:
+          type: string
+        sensor_value:
+          type: number
+    Message29:
+      type: object
+      properties:
+        process_id:
+          type: string
+        process_status:
+          type: string
+    Message30:
+      type: object
+      properties:
+        notification_type:
+          type: string
+        notification_message:
+          type: string

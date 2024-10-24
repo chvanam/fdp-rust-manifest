@@ -1,0 +1,88 @@
+asyncapi: '2.0.0'
+info:
+  title: Multiple Messages
+  version: '1.0.0'
+defaultContentType: application/json
+channels:
+  topic/one:
+    description: Topic 1
+    publish:
+      operationId: SendMessage1
+      message:
+        $ref: '#/components/messages/MessageA'
+  topic/two:
+    description: Topic 2
+    publish:
+      operationId: SendMessage2
+      message:
+        $ref: '#/components/messages/MessageB'
+  topic/three:
+    description: Topic 3
+    publish:
+      operationId: SendMessage3
+      message:
+        $ref: '#/components/messages/MessageC'
+  topic/four:
+    description: Topic 4
+    publish:
+      operationId: SendMessage4
+      message:
+        $ref: '#/components/messages/MessageD'
+  topic/five:
+    description: Topic 5
+    publish:
+      operationId: SendMessage5
+      message:
+        $ref: '#/components/messages/MessageE'
+
+components:
+  messages:
+    MessageA:
+      name: MessageA
+      payload:
+        $ref: "#/components/schemas/MessageA"
+    MessageB:
+      name: MessageB
+      payload:
+        $ref: "#/components/schemas/MessageB"
+    MessageC:
+      name: MessageC
+      payload:
+        $ref: "#/components/schemas/MessageC"
+    MessageD:
+      name: MessageD
+      payload:
+        $ref: "#/components/schemas/MessageD"
+    MessageE:
+      name: MessageE
+      payload:
+        $ref: "#/components/schemas/MessageE"
+
+  schemas:
+    MessageA:
+      type: object
+      properties:
+        value:
+          type: integer
+    MessageB:
+      type: object
+      properties:
+        value:
+          type: string
+    MessageC:
+      type: object
+      properties:
+        value:
+          type: boolean
+    MessageD:
+      type: object
+      properties:
+        value:
+          type: number
+    MessageE:
+      type: object
+      properties:
+        value:
+          type: array
+          items:
+            type: string

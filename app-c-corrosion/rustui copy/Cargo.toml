@@ -1,0 +1,24 @@
+[package]
+name = "rustui"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["staticlib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rumqttc = "0.24.0"
+serde_json = "1.0.114"
+serde = { version = "1.0.197", features = ["derive"]}
+fdp-definition = { path = "../../fdp-core/fdp-definition" }
+mqtt-client = { path = "../../fdp-core/mqtt-client" }
+tokio = { version = "1.37.0", features = ["full"] }
+log = "0.4.21"
+env_logger = "0.11.3"
+
+
+[build-dependencies]
+bindgen = "0.69.4"
+cbindgen = "0.24.5"

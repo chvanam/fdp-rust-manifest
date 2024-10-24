@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "rustui.h": "c"
+    }
+}

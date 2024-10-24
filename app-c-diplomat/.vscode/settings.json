@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "diplomat_runtime.h": "c",
+        "randomnumberwrapper.h": "c",
+        "randomcounter.h": "c"
+    }
+}

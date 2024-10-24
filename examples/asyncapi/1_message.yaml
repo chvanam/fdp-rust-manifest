@@ -1,0 +1,26 @@
+asyncapi: '2.0.0'
+info:
+  title: One Message
+  version: '1.0.0'
+defaultContentType: application/json
+channels:
+  topic/one:
+    description: Topic 1
+    publish:
+      operationId: Send Message 1
+      message:
+        $ref: '#/components/messages/MessageA'
+
+components:
+  messages:
+    MessageA:
+      name: MessageA
+      payload:
+        $ref: "#/components/schemas/MessageA"
+
+  schemas:
+    MessageA:
+      type: object
+      properties:
+        value:
+          type: integer

@@ -1,0 +1,12 @@
+[package]
+name = "fdp-definition"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+schemars = "0.8.21"
+serde = { version = "1.0.207", features = ["derive"] }
+serde_json = "1.0.124"
+fdp = { path = "../fdp-macros" }
+fdp-common = { path = "../fdp-common" }
+clap = { version = "4.5.1", features = ["derive"] }

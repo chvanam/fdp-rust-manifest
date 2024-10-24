@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+
+members = [ 
+    "fdp-common",
+    "fdp-definition",
+    "fdp-macros",
+    "fdp-mqtt-client",
+]

@@ -1,0 +1,2 @@
+# Editable install with no version control (fdp_definition==0.1.0)
+-e /Users/charles/Desktop/workspace/fdp-core/fdp-definition/gen
