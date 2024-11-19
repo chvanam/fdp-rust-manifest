@@ -10,23 +10,23 @@ OUTPUT_FILE="benchmark_results.json"
 
 # Define functions for benchmarking
 asyncapi_pydantic() {
-    asyncapi generate models python ../examples/asyncapi/30_message.yaml --pyDantic -o temp/pydantic
+    asyncapi generate models python ../examples/asyncapi/1_message.yaml --pyDantic -o temp/pydantic
 }
 
 asyncapi_doc() {
-    asyncapi generate fromTemplate ../examples/asyncapi/30_message.yaml @asyncapi/html-template -o temp/docs --force-write --use-new-generator
+    asyncapi generate fromTemplate ../examples/asyncapi/1_message.yaml @asyncapi/html-template -o temp/docs --force-write --use-new-generator
 }
 
 asyncapi_python() {
-    asyncapi generate fromTemplate ../examples/asyncapi/30_message.yaml @asyncapi/python-paho-template -o temp/python --force-write
+    asyncapi generate fromTemplate ../examples/asyncapi/1_message.yaml @asyncapi/python-paho-template -o temp/python --force-write
 }
 
 rust_manifest_doc(){
-    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --bin graph
+    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --release --bin graph
 }
 
 rust_python(){
-    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --bin python -- --output temp/gen
+    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --release --bin python -- --output temp/gen
 }
 
 # Export functions

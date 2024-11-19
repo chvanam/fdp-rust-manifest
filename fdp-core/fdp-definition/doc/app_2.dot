@@ -1,0 +1,6 @@
+digraph {
+    0 [ label = "app_2"]
+    1 [ label = "app_1"]
+    1 -> 0 [ label = "Broadcasts: RandomNumber"]
+    0 -> 1 [ label = "Handles: StopRequest"]
+}
