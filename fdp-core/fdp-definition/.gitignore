@@ -1,3 +1,4 @@
 /target/
 /gen/
-/src/doc/
+/src/doc/*.png
+/src/doc/*.dot
