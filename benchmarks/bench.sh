@@ -14,7 +14,7 @@ asyncapi_pydantic() {
 }
 
 asyncapi_doc() {
-    asyncapi generate fromTemplate ../examples/asyncapi/1_message.yaml @asyncapi/html-template -o temp/docs --force-write
+    asyncapi generate fromTemplate ../examples/asyncapi/1_message.yaml @asyncapi/html-template -o temp/docs --force-write --use-new-generator
 }
 
 asyncapi_python() {
@@ -22,11 +22,11 @@ asyncapi_python() {
 }
 
 rust_manifest_doc(){
-    cargo run --package fdp-definition --bin doc
+    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --bin graph
 }
 
 rust_python(){
-    cargo run --package fdp-definition --bin python -- --output temp/gen
+    cargo run --manifest-path ../fdp-core/Cargo.toml --package fdp-definition --bin python -- --output temp/gen
 }
 
 # Export functions
@@ -38,7 +38,7 @@ export -f rust_python
 
 # Run benchmarks
 echo "Running benchmarks"
-hyperfine --shell=bash --warmup 2 --runs 4 \
+hyperfine --shell=bash --warmup 3 --runs 10 \
     'rust_manifest_doc' \
     'rust_python' \
     'asyncapi_doc' \
