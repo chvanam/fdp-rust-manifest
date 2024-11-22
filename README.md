@@ -8,6 +8,9 @@ npm install -g @asyncapi/cli
 apt install hyperfine
 brew install hyperfine
 
+# Install datamodel-code-generator
+pip install datamodel-code-generator
+
 # Build using cargo
 cd fdp-core
 cargo build --release
