@@ -35,7 +35,7 @@ fn main() {
                 png_file_path.to_str().unwrap(),
             ])
             .output()
-            .expect("Failed to execute command");
+            .expect("Failed to execute dot command");
 
         if !output.status.success() {
             let error_message = String::from_utf8_lossy(&output.stderr);

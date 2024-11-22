@@ -11,6 +11,10 @@ brew install hyperfine
 # Install datamodel-code-generator
 pip install datamodel-code-generator
 
+# Install graphviz (dot)
+apt install graphviz
+brew install graphviz
+
 # Build using cargo
 cd fdp-core
 cargo build --release
