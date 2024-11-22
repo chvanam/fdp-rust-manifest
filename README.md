@@ -4,6 +4,10 @@
 # Install asyncapi-cli
 npm install -g @asyncapi/cli
 
+# Install hyperfine
+apt install hyperfine
+brew install hyperfine
+
 # Build using cargo
 cd fdp-core
 cargo build --release
